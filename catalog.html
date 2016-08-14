@@ -13,54 +13,54 @@
   </head>
   <body>
     <!-- begin heeader -->
-    <heeader class="heeader">
-      <div class="wrap clearfix">
+    <header class="header">
+      <div class="wrap header__wrap clearfix">
 
-        <div class="logo">
-          <img src="http://beerhold.it/111/24" alt="">
+        <div class="header__logo">
+          <img src="http://beerhold.it/111/24" alt="" class="logo__pic">
         </div>
 
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Информация</a>
+        <nav class="header__menu">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Информация</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Новости</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Новости</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Прайс-лист</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Прайс-лист</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link_active" href="#">Магазин</a>
+            <li class="menu__item">
+              <a class="menu__link menu__link_active" href="#">Магазин</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Контакты</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <div class="login">
+        <div class="header__login">
           <a href="#" class="login__link">вход</a>
         </div>
 
       </div>
 
-    </heeader>
+    </header>
     <!-- end heeader -->
     
-    <!-- begin top-block -->
-    <section class="top-block">
-      <h1>средства для ухода</h1>
-      <nav class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item"><a class="breadcrumbs__item_link" href="#">главная</a></li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__item_link" href="#">магазин</a></li>
+    <!-- begin top -->
+    <section class="wrap top">
+      <h1 class="top__title">средства для ухода</h1>
+      <nav class="top__breadcrumbs">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">магазин</a></li>
           <li class="breadcrumbs__item">средства для ухода</li>
         </ul>
       </nav>
     </section>
-    <!-- end top-block -->
+    <!-- end top -->
 
     <!-- begin main -->
     <main class="wrap">
@@ -73,33 +73,33 @@
           <!-- begin filters -->
           <section class="filters">
             <div class="wrap-form">
-              <form action="" method="post">
+              <form action="" method="post" class="filters__form">
                 <!-- begin brand -->
                 <div class="brand">
                   <h4 class="brand__title">производители:</h4>
 
-                  <label for="baxter">baxter of california
-                    <input type="checkbox" name="baxter" id="baxter">
+                  <label for="baxter" class="brand__label">
+                    <input type="checkbox" name="baxter" id="baxter" class="brand__input">baxter of california
                   </label>
 
-                  <label for="natty">mr natty
-                    <input type="checkbox" name="natty" id="natty">
+                  <label for="natty" class="brand__label">
+                    <input type="checkbox" name="natty" id="natty" class="brand__input">mr natty
                   </label>
 
-                  <label for="suavecito">suavecito
-                    <input type="checkbox" name="suavecito" id="suavecito">
+                  <label for="suavecito" class="brand__label">
+                    <input type="checkbox" name="suavecito" id="suavecito" class="brand__input">suavecito
                   </label>
 
-                  <label for="malin">malin+goetz
-                    <input type="checkbox" name="malin" id="malin">
+                  <label for="malin" class="brand__label">
+                    <input type="checkbox" name="malin" id="malin" class="brand__input">malin+goetz
                   </label>
 
-                  <label for="murray">murray's
-                    <input type="checkbox" name="murray" id="murray">
+                  <label for="murray" class="brand__label">
+                    <input type="checkbox" name="murray" id="murray" class="brand__input">murray's
                   </label>
 
-                  <label for="american">american crew
-                    <input type="checkbox" name="american" id="american">
+                  <label for="american" class="brand__label">
+                    <input type="checkbox" name="american" id="american" class="brand__input">american crew
                   </label>
 
                 </div>
@@ -109,16 +109,16 @@
                 <div class="group">
                   <h4 class="group__title">группы товаров:</h4>
 
-                  <label for="razor">бритвенные принадлежности
-                    <input type="radio" name="radio" id="razor">
+                  <label for="razor" class="group__label">
+                    <input type="radio" name="radio" id="razor" class="group__radio">бритвенные принадлежности
                   </label>
 
-                  <label for="preparations">средства для ухода
-                    <input type="radio" name="radio" id="preparations">
+                  <label for="preparations" class="group__label">
+                    <input type="radio" name="radio" id="preparations" class="group__radio">средства для ухода
                   </label>
 
-                  <label for="accessories">аксессуары
-                    <input type="radio" name="radio" id="accessories">
+                  <label for="accessories" class="group__label">
+                    <input type="radio" name="radio" id="accessories" class="group__radio">аксессуары
                   </label>
 
                 </div>
@@ -134,7 +134,7 @@
 
         <!-- begin goods -->
         <article class="goods">
-          <div class="wrap-goods">
+          <div class="wrap-goods clearfix">
 
             <div class="goods__item">
               <img class="goods__item_thumbs" src="http://beerhold.it/220/165" alt="">
@@ -190,20 +190,22 @@
               </div>
             </div>
           </div>
+
+          <!-- begin pagination -->
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item"><a href="#" class="pagintaion__link">1</a></li>
+              <li class="pagination__item"><a href="#" class="pagintaion__link">2</a></li>
+              <li class="pagination__item"><a href="#" class="pagintaion__link">3</a></li>
+              <li class="pagination__item"><a href="#" class="pagintaion__link">4</a></li>
+            </ul>
+          </div>
+          <!-- end pagination -->
         </article>
         <!-- end goods -->
       </div>
       
-      <!-- begin pagination -->
-      <div class="pagination">
-        <ul class="pagination__list">
-          <li class="pagination__item"><a href="#" class="pagintaion__link">1</a></li>
-          <li class="pagination__item"><a href="#" class="pagintaion__link">2</a></li>
-          <li class="pagination__item"><a href="#" class="pagintaion__link">3</a></li>
-          <li class="pagination__item"><a href="#" class="pagintaion__link">4</a></li>
-        </ul>
-      </div>
-      <!-- end pagination -->
+      
     </main>
       <!-- end main -->
 
@@ -222,16 +224,16 @@
           <ul class="social__list">
             <li class="social__item">
               <a href="#" class="social__link">
-                <img src="http://beerhold.it/50/50" alt="">
+                <img src="http://beerhold.it/50/50" alt="" class="social__pic">
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link">
-                <img src="http://beerhold.it/50/50" alt="">
+                <img src="http://beerhold.it/50/50" alt="" class="social__pic">
               </a>
             </li><li class="social__item">
               <a href="#" class="social__link">
-                <img src="http://beerhold.it/50/50" alt="">
+                <img src="http://beerhold.it/50/50" alt="" class="social__pic">
               </a>
             </li>
           </ul>

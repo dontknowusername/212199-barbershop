@@ -435,3 +435,94 @@ h4 {
   font-size: 24px;
   line-height: 30px;
 }
+
+.clearfix:after, .clearfix:before {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.header {
+  background: #000;
+}
+
+.wrap {
+  width: 940px;
+  margin:  0 auto;
+}
+
+.header__wrap {
+  padding-top: 10px;
+}
+
+.header__logo, 
+.header__menu, 
+.sidebar,
+.goods__item,
+.goods,
+.contact,
+.social,
+.left {
+  float: left;
+}
+
+.menu__item,
+.breadcrumbs__item,
+.pagination__item {
+  display: inline-block;
+}
+
+.header__login, 
+.designed,
+.right {
+  float: right;
+}
+
+.sidebar {
+  width: 220px;
+}
+
+.brand__label,
+.group__label {
+  display: block;
+}
+
+.goods {
+  width: 700px;
+}
+
+.goods__item {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.goods__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.contact {
+  width: 380px;
+}
+
+.social {
+  width: 140px;
+}
+
+.designed {
+  width: 140px;
+}
+
+
+
+/****** catalog-item ******/
+
+.left {
+  width: 460px;
+}
+
+.right {
+  width: 390px;
+}
