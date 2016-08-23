@@ -13,17 +13,19 @@
   </head>
   <body>
     <!-- begin heeader -->
-    <heeader class="heeader">
-      <div class="wrap clearfix">
+    <header class="header">
+      <div class="wrap header__wrap clearfix">
 
         <div class="header__logo">
-          <img src="http://beerhold.it/111/24" alt="" class="logo__pic">
+          <a href="#">
+            <img src="img/logo.png" alt="" class="logo__pic" width="111" height="24">
+          </a>
         </div>
 
         <nav class="header__menu">
           <ul class="menu">
             <li class="menu__item">
-              <a class="menu__link" href="#">Информация</a>
+              <a class="menu__link menu__link_active" href="#">Информация</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Новости</a>
@@ -32,7 +34,7 @@
               <a class="menu__link" href="#">Прайс-лист</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link menu__link_active" href="#">Магазин</a>
+              <a class="menu__link" href="#">Магазин</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Контакты</a>
@@ -46,7 +48,7 @@
 
       </div>
 
-    </heeader>
+    </header>
     <!-- end heeader -->
     
     <!-- begin top -->
@@ -56,25 +58,25 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">главная</a></li>
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">магазин</a></li>
-          <li class="breadcrumbs__item">средства для ухода</li>
+          <li class="breadcrumbs__item breadcrumbs__item_current">средства для ухода</li>
         </ul>
       </nav>
     </section>
     <!-- end top -->
 
     <!-- begin main-item -->
-    <main class="wrap main-item clearfix">
+    <main class="wrap inner-wrap clearfix">
 
       <!-- begin left -->
       <section class="left">
         <div class="gallery">
           <figure class="gallery__main">
-            <img class="gallery__main_img" src="http://beerhold.it/460/500" alt="">
+            <img class="gallery__main-img" src="http://beerhold.it/460/498" alt="">
           </figure>
           <figure class="gallery__thumb">
-            <img class="gallery__thumb_img" src="http://beerhold.it/140/150" alt="">
-            <img class="gallery__thumb_img" src="http://beerhold.it/140/150" alt="">
-            <img class="gallery__thumb_img" src="http://beerhold.it/140/150" alt="">
+            <img class="gallery__thumb-img" src="http://beerhold.it/140/150" alt="">
+            <img class="gallery__thumb-img" src="http://beerhold.it/140/150" alt="">
+            <img class="gallery__thumb-img" src="http://beerhold.it/140/150" alt="">
           </figure>
         </div>
       </section>
@@ -90,13 +92,13 @@
         <div class="right__info">
           <p class="right__info_text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
 
-          <div class="price__block">
-            <span class="price__block_value">2900 руб.</span>
-            <button class="btn price__block_btn">купить</button>
+          <div class="price__block price__block_item">
+            <span class="price__block-value">2900 руб.</span>
+            <button class="btn price__block-btn">купить</button>
           </div>
 
           <div class="about">
-            <span class="about__title">в набор входят:</span>
+            <h4 class="about__title">в набор входят:</h4>
             <ul class="about__list">
               <li class="about__item">Средство для умывания (50 мл)</li>
               <li class="about__item">Увлажняющий крем (50 мл)</li>
@@ -114,29 +116,26 @@
 
     <!-- begin footer -->
     <footer class="footer">
-      <div class="wrap clearfix">
+      <div class="wrap wrap-footer clearfix">
         <div class="contact">
           <span class="contact__name">барбершоп "бородинский"</span>
           <span class="contact__address">АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</span>
-          <span class="contact__place">как нас найти</span>
+          <a class="contact__place" href="#">как нас найти?</a>
           <span class="contact__phone">телефон: +7 (495) 666-02-66</span>
         </div>
 
         <div class="social">
           <span class="social__title">давайте дружить!</span>
-          <ul class="social__list">
+          <ul class="social__list clearfix">
             <li class="social__item">
-              <a href="#" class="social__link">
-                <img src="http://beerhold.it/50/50" alt="">
+              <a href="#" class="social__link social__link_vk">
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link">
-                <img src="http://beerhold.it/50/50" alt="">
+              <a href="#" class="social__link social__link_fb">
               </a>
             </li><li class="social__item">
-              <a href="#" class="social__link">
-                <img src="http://beerhold.it/50/50" alt="">
+              <a href="#" class="social__link social__link_ins">
               </a>
             </li>
           </ul>
@@ -149,5 +148,7 @@
       </div>
     </footer>
     <!-- end footer -->
+    <script   src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
